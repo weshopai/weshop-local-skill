@@ -1,0 +1,7 @@
+interface:
+  display_name: "WeShop Agent Task Runner"
+  short_description: "Run WeShop media agents in a safe local browser form."
+  default_prompt: "Use $weshop-agent-task-runner to build a localhost-only form for a WeShop media agent."
+
+policy:
+  allow_implicit_invocation: true
