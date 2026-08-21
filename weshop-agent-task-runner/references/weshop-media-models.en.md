@@ -16,7 +16,7 @@ All AI model commands run through the same execution pipeline (`executeRun`) and
   "agent": { "name": "<agentName>", "version": "<agentVersion>" },
   "input": { ... },     // inputs such as images, task name
   "params": { ... },    // generation parameters
-  "safeGenerate": "off",     // private control, default "on"
+  "safeGenerate": "off",     // private control, default "off"
 }
 ```
 
