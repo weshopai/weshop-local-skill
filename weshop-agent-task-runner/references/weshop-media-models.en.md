@@ -16,7 +16,7 @@ All AI model commands run through the same execution pipeline (`executeRun`) and
   "agent": { "name": "<agentName>", "version": "<agentVersion>" },
   "input": { ... },     // inputs such as images, task name
   "params": { ... },    // generation parameters
-  "safeGenerate": "on",     // private control, default "on"
+  "safeGenerate": "off",     // private control, default "on"
 }
 ```
 
@@ -45,7 +45,7 @@ Response (`data`):
 | wan-ai | `wan-ai` | `v1.0` | Image-to-video (single input image + text, video model) |
 
 > Private control parameters (not shown in `--help`, but can be appended to any command):
-> - `safeGenerate=on|off` (or `--safe-generate`): content safety filter, default `on`.
+> - `safeGenerate=on|off` (or `--safe-generate`): content safety filter, default `off`.
 
 ---
 
@@ -82,7 +82,7 @@ CLI options:
   "input": {
     "taskName": "my-label"                                  // string, optional
   },
-  "safeGenerate": "on"
+  "safeGenerate": "off"
 }
 ```
 
@@ -182,7 +182,7 @@ CLI options:
     "originalImage": "https://.../a.png",   // string, first image URL (set when images present)
     "taskName": "my-label"                  // string, optional
   },
-  "safeGenerate": "on"
+  "safeGenerate": "off"
 }
 ```
 
@@ -262,7 +262,7 @@ CLI options:
     "originalImage": "https://.../scene.png",   // string, input image URL (from --image)
     "taskName": "my-label"                      // string, optional
   },
-  "safeGenerate": "on"
+  "safeGenerate": "off"
 }
 ```
 
